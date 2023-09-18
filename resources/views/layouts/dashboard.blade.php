@@ -15,17 +15,19 @@
         <meta http-equiv="msapplication-TileImage" content="{{ asset('images/twitchviews-300x300.png') }}">
         @yield('meta')
 
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+        <link rel="stylesheet" href="{{ asset('dashboard/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('dashboard/css/responsive.css') }}">
     </head>
     <body>
-        @include('components.header')
+        @include('dashboard.components.header')
 
-        @yield('content')
+        <main class="wrapper-padding">
+            @yield('content')
+        </main>
 
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('dashboard/js/jquery.min.js') }}"></script>
         <script src="{{ asset('js/jquery-cookie.min.js') }}"></script>
-        <script src="{{ asset('js/script.js?v=1.0.12') }}"></script>
+        <script src="{{ asset('dashboard/js/script.js') }}"></script>
 
         @yield('js')
     </body>

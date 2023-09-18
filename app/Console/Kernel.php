@@ -12,7 +12,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        $schedule->command('reyden:token')->everyFourMinutes();
+        $schedule->command('orders:check')->everyMinute();
+        $schedule->command('orders:task')->everyMinute();
     }
 
     /**

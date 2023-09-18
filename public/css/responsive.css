@@ -1,0 +1,79 @@
+@media (max-width: 1050px) {
+
+    .wrapper-padding {
+        padding: 0 35px;
+    }
+
+    .hero-container {
+        padding-top: 235px;
+        padding-bottom: 235px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .header-container {
+        height: 3.5rem;
+    }
+
+    .hero-container {
+        padding-top: 8.75rem;
+        padding-bottom: 6rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.575rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+    }
+
+    .twitch-search {
+        flex-direction: column;
+        background-color: transparent;
+        padding: 0px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .twitch-search-input {
+        flex: auto;
+        font-size: 15px;
+    }
+
+    .twitch-selected {
+        flex: auto;
+    }
+
+    .twitch-search-button {
+        margin-top: 0.75rem;
+        margin-left: 0;
+    }
+
+    .twitch-search-autocomplete {
+        top: 45%;
+        max-height: 185px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+
+    .wrapper-padding {
+        padding: 0 20px;
+    }
+
+    .hero-container {
+        padding-top: 8.75rem;
+        padding-bottom: 6rem;
+    }
+
+    .twitch-search-autocomplete {
+        top: 45%;
+        max-height: 185px;
+    }
+}

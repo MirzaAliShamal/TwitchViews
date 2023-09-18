@@ -19,7 +19,6 @@
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     </head>
     <body>
-        @include('components.header')
 
         @yield('content')
 
